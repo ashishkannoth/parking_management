@@ -25,6 +25,7 @@ SETUP
  2)when running the application first time, one parking lot for each size will be created by using CommandLineRunner
  
  3)configuring the number of parkng lot-:
+ 
     by calling api '/api/lotDetails/addLot' we can add lot one by one. 
     It Required a String parameter 'lotType' which can have value small,medium,large 
     if the api is called with the parameter value 'small' one more lot will be available for small size lot table
@@ -33,15 +34,18 @@ SETUP
     the lot with the givenn id in particular size will be deleted
  
  4)Getting all lotdetails-:
+ 
     the api for getting all lot is '/api/lotDetails/getAllLot'
     it gives all sized lot information
  
- 5)Getting only Slot which is suitable for car size
+ 5)Getting only Slot which is suitable for car size-:
+ 
      the api is /api/lotDetails/getLotByType
      the parameters are width and length of the car
      it gives  list of  Lot which is only accessible by given sized car
  
  6)Lot booking-:
+ 
      the api is /api/lotDetails/lotBooking 
       It Required a long parameter lotId and request body CarDetails.
       CarDetails is a simple class with field car number,car width,car height and its getteres and setters.
@@ -50,6 +54,7 @@ SETUP
       if api call succes it returns lot details 
  
  7)Lot release-:
+ 
       the api is /api/lotDetails/lotRelease
       The request body for api is carDetails.
       i assume that when the car moves out carNumber,car dimensions are detected by system.
