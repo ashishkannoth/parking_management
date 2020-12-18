@@ -7,8 +7,11 @@ SETUP
 2)After successfully Cloning the Project you can Create database with a name parking_db
 
 3)edit the application.properties file
+  
   spring.datasource.url={port of your database}/parking_db
+  
   spring.datasource.username={databse username}
+  
   spring.datasource.password={database password}
 
 4)run the project as spring Boot app
