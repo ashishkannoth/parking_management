@@ -4,11 +4,11 @@ SETUP
 
 1)In this Project i have using spring Boot,mysql,jpa repository
 
-2)After successfully Cloning the Project you can Create database with a name parking_db
+2)After successfully Cloning the Project you can Create database with a name parking
 
 3)edit the application.properties file
   
-  spring.datasource.url={port of your database}/parking_db
+  spring.datasource.url={port of your database}/parking
   
   spring.datasource.username={databse username}
   
